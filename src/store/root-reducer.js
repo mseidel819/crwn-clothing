@@ -8,3 +8,5 @@ export const rootReducer = combineReducers({
   categories: categoriesReducer,
   cart: cartReducer,
 });
+
+// if youre getting an error with redux, check that youve added 'return' to the functions that need it. Or remove brackets. You ass....thats the bug EVERY time.

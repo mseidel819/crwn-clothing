@@ -1,5 +1,5 @@
-import CART_ACTION_TYPES from "./cart.types.js";
 import { createAction } from "../../utils/reducer/reducer.utils";
+import CART_ACTION_TYPES from "./cart.types.js";
 
 const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
@@ -53,5 +53,5 @@ export const clearItemFromCart = (cartItems, cartItemToClear) => {
 };
 
 export const setIsCartOpen = (bool) => {
-  createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN, bool);
+  return createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN, bool);
 };
