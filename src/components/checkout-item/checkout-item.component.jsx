@@ -1,5 +1,3 @@
-// import { useContext } from "react";
-// import { CartContext } from "../../contexts/cart.context";
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectCartItems } from "../../store/cart/cart.selector.js";
