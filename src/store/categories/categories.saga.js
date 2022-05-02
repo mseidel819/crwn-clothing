@@ -5,9 +5,9 @@ import { getCategoriesAndDocuments } from "../../utils/firebase/firebase.utils.j
 import {
   fetchCategoriesSuccess,
   fetchCategoriesFailed,
-} from "./categories.action.js";
+} from "./categories.action.ts";
 
-import CATEGORIES_ACTION_TYPES from "./categories.types.js";
+import { CATEGORIES_ACTION_TYPES } from "./categories.types.ts";
 
 // export const fetchCategoriesAsync = () => async (dispatch) => {
 //   dispatch(fetchCategoriesStart());
