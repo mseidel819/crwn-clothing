@@ -3,15 +3,15 @@ import { useSelector } from "react-redux";
 
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
-import { selectCartTotal } from "../../store/cart/cart.selector.js";
-import { selectCurrentUser } from "../../store/user/user.selector.js";
+import { selectCartTotal } from "../../store/cart/cart.selector";
+import { selectCurrentUser } from "../../store/user/user.selector";
 
-import { BUTTON_TYPE_CLASSES } from "../button/button.component.jsx";
+import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import {
   PaymentFormContainer,
   FormContainer,
   PaymentButton,
-} from "./payment-form.styles.jsx";
+} from "./payment-form.styles";
 
 const PaymentForm = () => {
   const stripe = useStripe();

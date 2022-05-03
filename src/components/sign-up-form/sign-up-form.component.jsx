@@ -3,12 +3,12 @@ import { useDispatch } from "react-redux";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
-} from "../../utils/firebase/firebase.utils.js";
-import FormInput from "../form-input/form-input.component.jsx";
+} from "../../utils/firebase/firebase.utils";
+import FormInput from "../form-input/form-input.component";
 
-import { SignUpContainer } from "./sign-up-form.styles.jsx";
-import { signUpStart } from "../../store/user/user.action.js";
-import Button from "../button/button.component.jsx";
+import { SignUpContainer } from "./sign-up-form.styles";
+import { signUpStart } from "../../store/user/user.action";
+import Button from "../button/button.component";
 
 const defaultFormFields = {
   displayName: "",

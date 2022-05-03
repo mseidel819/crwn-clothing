@@ -7,8 +7,8 @@ import Spinner from "../../components/spinner/spinner.component";
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,
-} from "../../store/categories/categories.selector.ts";
-import { CategoryContainer, CategoryTitle } from "./category.styles.jsx";
+} from "../../store/categories/categories.selector";
+import { CategoryContainer, CategoryTitle } from "./category.styles";
 
 const Category = () => {
   const { category } = useParams();

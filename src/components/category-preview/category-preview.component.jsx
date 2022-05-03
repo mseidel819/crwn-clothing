@@ -2,7 +2,7 @@ import {
   CategoryPreviewContainer,
   Title,
   Preview,
-} from "./category-preview.styles.jsx";
+} from "./category-preview.styles";
 import ProductCard from "../product-card/product-card.component";
 
 const CategoryPreview = ({ title, products }) => {

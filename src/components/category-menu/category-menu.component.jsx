@@ -1,4 +1,4 @@
-import { CategoriesContainer } from "./category-menu.styles.jsx";
+import { CategoriesContainer } from "./category-menu.styles";
 import DirectoryItem from "../directory-item/directory-item.component";
 
 const categories = [

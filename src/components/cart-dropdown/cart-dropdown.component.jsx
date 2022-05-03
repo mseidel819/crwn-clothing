@@ -7,14 +7,14 @@ import CartItem from "../cart-item/cart-item.component";
 import {
   selectCartItems,
   selectIsCartOpen,
-} from "../../store/cart/cart.selector.js";
-import { setIsCartOpen } from "../../store/cart/cart.action.js";
+} from "../../store/cart/cart.selector";
+import { setIsCartOpen } from "../../store/cart/cart.action";
 
 import {
   CartDropdownContainer,
   EmptyMessage,
   CartItems,
-} from "./cart-dropdown.styles.jsx";
+} from "./cart-dropdown.styles";
 
 const CartDropdown = () => {
   const cartItems = useSelector(selectCartItems);
