@@ -10,6 +10,8 @@ import App from "./App";
 
 import { store, persistor } from "./store/store";
 
+import * as serviceWorker from "./serviceWorkerRegistration.js";
+
 const entryPoint = document.getElementById("root");
 render(
   <React.StrictMode>
@@ -25,3 +27,5 @@ render(
   </React.StrictMode>,
   entryPoint
 );
+
+serviceWorker.register();
