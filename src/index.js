@@ -9,7 +9,6 @@ import { stripePromise } from "./utils/stripe/stripe.utils.js";
 import App from "./App";
 
 import { store, persistor } from "./store/store";
-import "./index.scss";
 
 const entryPoint = document.getElementById("root");
 render(

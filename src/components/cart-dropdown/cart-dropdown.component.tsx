@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 
 import { useNavigate } from "react-router-dom";
@@ -24,10 +26,11 @@ const CartDropdown = () => {
   const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isCartOpen));
   const isCartOpen = useSelector(selectIsCartOpen);
 
-  const goToChckoutHandler = () => {
+  const goToChckoutHandler = useCallback(() => {
     navigate("/checkout");
     toggleIsCartOpen();
-  };
+  }, [toggleIsCartOpen]);
+
   return (
     <CartDropdownContainer>
       <CartItems>
